@@ -1,6 +1,6 @@
 # PoC CVE
 ## CVE-2020-15394
-- DBMS: MSSQL
+- DBMS: MSSQL</br>
 TRUE condition in sql query 
 ```
 POST /AppManager/json/ApmAdminServices/checkResourceID HTTP/1.1
